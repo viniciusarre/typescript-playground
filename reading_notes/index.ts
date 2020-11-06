@@ -84,3 +84,37 @@ obj3.test = 'write';
 // should throw
 
 
+type Age = number;
+type Person = {
+    name: string
+    age: Age
+}
+const age: Age = 55;
+let driver: Person = {
+    name: 'James May',
+    age
+}
+
+type Cat = { name: string, purrs: boolean }
+type Dog = { name: string, barks: boolean, wags: true }
+type CatOrDog = Cat | Dog;
+type CatAndDog = Cat & Dog;
+
+let f: CatOrDog = {
+    name: 'Bonkers',
+    purrs: true
+}
+
+f = {
+    name: 'Domino',
+    barks: true,
+    wags: true,
+}
+
+
+f = {
+    name: 'Donkers',
+    barks: true,
+    purrs: false,
+    wags: true
+}
