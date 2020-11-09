@@ -118,3 +118,75 @@ f = {
     purrs: false,
     wags: true
 }
+
+// arrays
+const stringArray: string[] = [
+    'only strings can be added',
+    'this is another string',
+    'yet another one'
+];
+
+const numberArray: number[] = [
+    0,
+    1,
+    2,
+    3
+];
+
+const catArray: [Cat] = [
+    {
+        name: 'Donkers',
+        purrs: false,
+    }
+]
+
+stringArray.push('string');
+numberArray.push(Math.PI);
+catArray.push({ name: 'cat', purrs: false });
+
+
+const mixedType: (string | number | boolean)[] = [
+    'string',
+    1000,
+    'or',
+    292932,
+    'number',
+    true,
+    false,
+    !!!false
+]
+
+mixedType.push(Math.PI)
+mixedType.push('stringval');
+mixedType.push(true);
+
+// tuples
+const programmingLanguages: [string, string, string] = [
+    'Rust',
+    'Javascript',
+    'Python',
+    // 'this line will throw'
+]
+
+programmingLanguages.push('s')
+
+// readonly arrays
+const arr: readonly number[] = [
+    21,
+    1,
+    0,
+    Math.E,
+    Math.PI
+];
+// will throw
+// arr.push(22)
+
+
+const arr2: ReadonlyArray<string> = [
+    'A',
+    'read-only',
+    'string',
+    'array'
+];
+// will also throw
+// arr2.push('skjsdksj')
