@@ -190,3 +190,32 @@ const arr2: ReadonlyArray<string> = [
 ];
 // will also throw
 // arr2.push('skjsdksj')
+
+// enums
+enum Languages {
+    English = 'EN',
+    French = 'FR',
+    Italian = 'IT',
+    Portuguese = 'PT',
+    Spanish = 'ES',
+    Japanese = 'JA',
+    Greek = 'EL',
+    Chinese = 'ZH',
+    Russian = 'RU',
+}
+
+const languagesISpeak: string[] = [
+    Languages.Portuguese,
+    Languages.English,
+    Languages.Spanish,
+    Languages.French,
+    Languages.Italian
+]
+
+const { Greek, Chinese, Japanese, Russian } = Languages
+const languagesIWantToLearn: string[] = [
+    Japanese,
+    Greek,
+    Chinese,
+    Russian
+]

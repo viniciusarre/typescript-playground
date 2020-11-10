@@ -3,6 +3,7 @@
         "lib": [
             "ES2015"
         ],
+        "preserveConstEnums": true,
         "module": "commonjs",
         "outDir": "dist",
         "sourceMap": true,
